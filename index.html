@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishi Shashikanth — AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Rishi Shashikanth — AI/ML Engineer, Full-Stack Developer & Director @ AccoFAI LLP. Final-year AIML student at BNM Institute of Technology, Bengaluru." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#4F46E5" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <div class="nav-logo-box">R</div>
+      <span>Rishi <strong>Shashikanth</strong></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-end">
+      <a href="#contact" class="btn-outline-xs">Resume ↗</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<!-- ===================== HERO ===================== -->
+<section id="home" class="hero-section">
+  <!-- Background blobs (decorative) -->
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+
+    <!-- Left -->
+    <div class="hero-left fade-in">
+
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Hello, World!
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hn-plain">RISHI</span>
+        <span class="hn-grad">SHASHIKANTH</span>
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-arrow">›</span>
+        <span id="typewriter"></span>
+        <span class="cursor">|</span>
+      </div>
+
+      <p class="hero-bio">
+        Final-year AI &amp; ML Engineering student at BNMIT with a CGPA of <strong>8.97</strong>.
+        Co-founder of STProLink. Building AI-powered applications, automation workflows,
+        and practical tech solutions that create real-world impact.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Work <span class="btn-arr">↗</span></a>
+        <a href="#contact"  class="btn-outline">Contact Me</a>
+      </div>
+
+      <div class="hero-stack">
+        <span class="stack-lbl">Built with</span>
+        <div class="stack-chips">
+          <span>Python</span><span>TensorFlow</span><span>LLMs</span>
+          <span>FastAPI</span><span>n8n</span><span>RAG</span><span>IoT</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right — floating profile card -->
+    <div class="hero-right fade-in">
+      <div class="profile-card">
+        <!-- Gradient top bar animated (decorative) -->
+        <div class="pc-topbar" aria-hidden="true"></div>
+
+        <div class="pc-header">
+          <div class="pc-avatar">RS</div>
+          <div class="pc-avail">
+            <span class="pc-avail-dot"></span>
+            Available for hire
+          </div>
+        </div>
+
+        <div class="pc-name">Rishi Shashikanth</div>
+        <div class="pc-role-lbl">AI / ML Engineer</div>
+
+        <div class="pc-sep"></div>
+
+        <div class="pc-stats">
+          <div class="pc-stat">
+            <div class="pc-stat-val">8.97</div>
+            <div class="pc-stat-key">CGPA</div>
+          </div>
+          <div class="pc-stat-div"></div>
+          <div class="pc-stat">
+            <div class="pc-stat-val">6+</div>
+            <div class="pc-stat-key">Projects</div>
+          </div>
+          <div class="pc-stat-div"></div>
+          <div class="pc-stat">
+            <div class="pc-stat-val">3+</div>
+            <div class="pc-stat-key">Hackathons</div>
+          </div>
+        </div>
+
+        <div class="pc-sep"></div>
+
+        <div class="pc-details">
+          <div class="pc-row"><span class="pc-icon">📍</span><span>Bengaluru, Karnataka</span></div>
+          <div class="pc-row"><span class="pc-icon">🎓</span><span>BNMIT · Class of 2027</span></div>
+          <div class="pc-row"><span class="pc-icon">💼</span><span>Director @ AccoFAI LLP</span></div>
+        </div>
+
+        <!-- Decorative blob inside card -->
+        <div class="pc-blob" aria-hidden="true"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-pip"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section-light">
+  <div class="sec-wrap">
+
+    <div class="about-grid">
+
+      <div class="about-text fade-in">
+        <div class="eyebrow">About Me</div>
+        <h2>A Glimpse Into <span>Who I Am</span></h2>
+
+        <p>
+          I'm <strong>Rishi Shashikanth</strong>, a final-year B.E. student in Artificial Intelligence &amp;
+          Machine Learning at <strong>BNM Institute of Technology, Bengaluru</strong> — maintaining a CGPA
+          of <strong>8.97&thinsp;/&thinsp;10</strong>. I build AI-powered applications, automation workflows,
+          and practical technology solutions that create real-world impact.
+        </p>
+        <p>
+          I'm the co-founder of <strong class="txt-green">STProLink</strong> — a creative services &amp; technology
+          startup delivering video editing, graphic design, social media content, and digital branding.
+          Currently developing an <strong>AI-powered social media management platform</strong> that automates
+          content research, generation, planning, and campaign workflows.
+        </p>
+        <p>
+          I completed a Developer Internship at <strong>Equinoxis Pvt. Ltd.</strong> building a Text-to-3D Model
+          Generation system using TripoSR and ShapeNet. My work spans Generative AI, LLMs, IoT systems,
+          Computer Vision, and full-stack automation.
+        </p>
+
+        <a href="#contact" class="btn-primary mt-6">Get My Resume ↗</a>
+      </div>
+
+      <div class="about-right fade-in">
+        <div class="info-grid">
+          <div class="info-tile"><span class="info-k">Institute</span><span class="info-v">BNM Institute of Technology</span></div>
+          <div class="info-tile"><span class="info-k">Degree</span><span class="info-v">B.E. — AI &amp; Machine Learning</span></div>
+          <div class="info-tile"><span class="info-k">CGPA</span><span class="info-v info-highlight">8.97 / 10</span></div>
+          <div class="info-tile"><span class="info-k">Batch</span><span class="info-v">2023 – 2027</span></div>
+          <div class="info-tile"><span class="info-k">Venture</span><span class="info-v">Co-Founder @ STProLink</span></div>
+          <div class="info-tile"><span class="info-k">Internship</span><span class="info-v">Developer Intern @ Equinoxis</span></div>
+        </div>
+
+        <div class="interests-box">
+          <div class="interests-lbl">Core Interests</div>
+          <div class="interests-chips">
+            <span>Generative AI</span><span>LLM Agents</span><span>Automation</span>
+            <span>IoT</span><span>Computer Vision</span><span>Full-Stack</span>
+            <span>Data Science</span><span>Entrepreneurship</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section-subtle">
+  <div class="sec-wrap">
+
+    <div class="sec-head-center fade-in">
+      <div class="eyebrow">Skills</div>
+      <h2>My Technical <span>Capabilities</span></h2>
+      <p class="sec-sub">A curated stack of tools and technologies I work with daily.</p>
+    </div>
+
+    <!-- Languages -->
+    <div class="sk-group fade-in">
+      <div class="sk-group-label"><span class="sk-dot sk-dot-indigo"></span>Languages</div>
+      <div class="sk-grid">
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"><span>SQL</span></div>
+      </div>
+    </div>
+
+    <!-- AI / ML -->
+    <div class="sk-group fade-in">
+      <div class="sk-group-label"><span class="sk-dot sk-dot-emerald"></span>AI / ML &amp; Data Science</div>
+      <div class="sk-grid">
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span>TensorFlow</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras"><span>Keras</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn"><span>Scikit-Learn</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"><span>NumPy</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"><span>OpenCV</span></div>
+        <div class="sk-card sk-txtcard"><div class="sk-icon-box" style="background:linear-gradient(135deg,#10a37f,#1a7f64)">GPT</div><span>OpenAI API</span></div>
+        <div class="sk-card sk-txtcard"><div class="sk-icon-box" style="background:linear-gradient(135deg,#cc785c,#b86040)">🦜</div><span>LangChain</span></div>
+        <div class="sk-card sk-txtcard"><div class="sk-icon-box" style="background:linear-gradient(135deg,#e8532a,#c94520);font-size:.58rem;letter-spacing:.04em">RAG</div><span>RAG</span></div>
+      </div>
+    </div>
+
+    <!-- Web & DevTools -->
+    <div class="sk-group fade-in">
+      <div class="sk-group-label"><span class="sk-dot sk-dot-violet"></span>Web &amp; DevTools</div>
+      <div class="sk-grid">
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>ReactJS</span></div>
+        <div class="sk-card sk-txtcard"><div class="sk-icon-box" style="background:#000;color:#fff;font-weight:900;font-size:.78rem">N</div><span>Next.js</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="Raspberry Pi"><span>Raspberry Pi</span></div>
+        <div class="sk-card sk-txtcard"><div class="sk-icon-box" style="background:linear-gradient(135deg,#ef4f2c,#c93b1e);font-size:.58rem">n8n</div><span>n8n</span></div>
+        <div class="sk-card"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"><span>Postman</span></div>
+        <div class="sk-card sk-txtcard"><div class="sk-icon-box" style="background:#24292e;color:#fff;font-size:.62rem;font-weight:700">GH</div><span>GitHub</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="section-light">
+  <div class="sec-wrap">
+
+    <div class="sec-head-center fade-in">
+      <div class="eyebrow">Projects</div>
+      <h2>Things I've <span>Built</span></h2>
+      <p class="sec-sub">A selection of projects across AI/ML, IoT, and full-stack development.</p>
+    </div>
+
+    <div class="proj-grid">
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-num">01</span>
+          <span class="proj-badge badge-ongoing">Ongoing</span>
+        </div>
+        <div class="proj-cat">GenAI · Automation</div>
+        <h3 class="proj-title">AI-Powered Social Media Management Platform</h3>
+        <p class="proj-desc">Developing an AI-powered platform to automate social media content generation, planning, and management. Integrates LLMs and automation workflows (n8n, Make.com) to streamline content creation and campaign execution.</p>
+        <div class="proj-tags"><span>LLMs</span><span>n8n</span><span>Make.com</span><span>FastAPI</span><span>Supabase</span></div>
+        <div class="proj-bar"></div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-num">02</span>
+          <span class="proj-badge badge-intern">Internship</span>
+        </div>
+        <div class="proj-cat">Generative AI · 3D</div>
+        <h3 class="proj-title">Text-to-3D Model Designer</h3>
+        <p class="proj-desc">Built a Text-to-3D generation system using TripoSR and ShapeNet to create STL/OBJ models from text descriptions. Optimised prompt inputs to improve 3D model quality and usability across different object categories.</p>
+        <div class="proj-tags"><span>TripoSR</span><span>ShapeNet</span><span>Python</span><span>Prompt Eng.</span></div>
+        <div class="proj-bar"></div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-num">03</span>
+          <span class="proj-badge badge-done">Completed</span>
+        </div>
+        <div class="proj-cat">IoT · Biomedical</div>
+        <h3 class="proj-title">Smart Biomedical Organ Transport System</h3>
+        <p class="proj-desc">Designed a smart cold-chain transport system using ESP32, Peltier cooling, GSM alerts, and IoT monitoring for safe transportation of organs, blood products, and vaccines with real-time sensing.</p>
+        <div class="proj-tags"><span>ESP32</span><span>IoT</span><span>GSM</span><span>Raspberry Pi</span></div>
+        <div class="proj-bar"></div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-num">04</span>
+          <span class="proj-badge badge-done">Completed</span>
+        </div>
+        <div class="proj-cat">Computer Vision</div>
+        <h3 class="proj-title">Fake Currency Detection System</h3>
+        <p class="proj-desc">Developed an image-processing solution using ROI-based feature extraction to identify counterfeit currency notes. Applied CV techniques to analyse security features and improve detection accuracy.</p>
+        <div class="proj-tags"><span>OpenCV</span><span>Python</span><span>Image Processing</span><span>ROI</span></div>
+        <div class="proj-bar"></div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-num">05</span>
+          <span class="proj-badge badge-done">Completed</span>
+        </div>
+        <div class="proj-cat">Agriculture AI</div>
+        <h3 class="proj-title">Crop Price Prediction Bot</h3>
+        <p class="proj-desc">ML-powered bot predicting crop prices using regression models and real-time data pipelines. Provides personalised recommendations for farmers, bridging data science and agriculture.</p>
+        <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>ML</span><span>Pandas</span></div>
+        <div class="proj-bar"></div>
+      </div>
+
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-num">06</span>
+          <span class="proj-badge badge-done">Completed</span>
+        </div>
+        <div class="proj-cat">Healthcare · Python</div>
+        <h3 class="proj-title">OPD &amp; Hospital Bed Management System</h3>
+        <p class="proj-desc">Built a Python-based hospital management system for patient admission and bed allocation tracking. Implemented SMS notifications for real-time patient updates and efficient resource management.</p>
+        <div class="proj-tags"><span>Python</span><span>MySQL</span><span>SMS API</span><span>FastAPI</span></div>
+        <div class="proj-bar"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience" class="section-subtle">
+  <div class="sec-wrap">
+
+    <div class="sec-head-center fade-in">
+      <div class="eyebrow">Experience</div>
+      <h2>My Professional <span>Journey</span></h2>
+      <p class="sec-sub">Roles and hands-on experience that shaped my skills.</p>
+    </div>
+
+    <div class="exp-list">
+
+      <div class="exp-card fade-in">
+        <div class="exp-left">
+          <div class="exp-logo exp-logo-i">A</div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-head">
+            <div>
+              <h3 class="exp-role">Director &amp; Co-Founder</h3>
+              <div class="exp-company">AccoFAI LLP <span class="exp-sub">· operating as STProLink</span></div>
+            </div>
+            <div class="exp-period">Mar 2021 – Present</div>
+          </div>
+          <p class="exp-desc">
+            Co-founded AccoFAI LLP — a registered LLP in India — operating its creative &amp; tech brand <strong>STProLink</strong>.
+            Delivering video editing, graphic design, social media content, and digital branding to clients.
+            Currently building an <strong>AI-powered social media management platform</strong> that automates content research,
+            generation, scheduling, and campaign workflows using LLMs, n8n, and Make.com.
+          </p>
+          <div class="exp-tags"><span>LLM Agents</span><span>n8n</span><span>Make.com</span><span>Entrepreneurship</span><span>GenAI</span></div>
+        </div>
+      </div>
+
+      <div class="exp-card fade-in">
+        <div class="exp-left">
+          <div class="exp-logo exp-logo-e">E</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-head">
+            <div>
+              <h3 class="exp-role">Developer Intern</h3>
+              <div class="exp-company">Equinoxis Pvt. Ltd.</div>
+            </div>
+            <div class="exp-period">Jul – Aug 2025</div>
+          </div>
+          <p class="exp-desc">
+            Built a <strong>Text-to-3D Model Generation system</strong> using TripoSR and ShapeNet datasets.
+            Optimised prompt inputs to improve 3D generation accuracy and evaluated STL/OBJ model quality
+            across different object categories.
+          </p>
+          <div class="exp-tags"><span>TripoSR</span><span>ShapeNet</span><span>Python</span><span>Prompt Engineering</span><span>3D Modelling</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== EDUCATION ===================== -->
+<section id="education" class="section-light">
+  <div class="sec-wrap">
+
+    <div class="sec-head-center fade-in">
+      <div class="eyebrow">Education</div>
+      <h2>Academic <span>Background</span></h2>
+      <p class="sec-sub">Formal education and the foundations it laid.</p>
+    </div>
+
+    <div class="edu-timeline fade-in">
+
+      <div class="edu-track">
+        <div class="edu-track-fill"></div>
+      </div>
+
+      <div class="edu-node">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-year">2021 – 2023</div>
+          <div class="edu-badge">Pre-University</div>
+          <h3 class="edu-degree">PCMC — Science Stream</h3>
+          <div class="edu-inst">Sri Sri Ravishankar Vidya Mandir, Bengaluru</div>
+          <div class="edu-grade">Physics · Chemistry · Maths · CS · <strong>78.4%</strong></div>
+        </div>
+      </div>
+
+      <div class="edu-node edu-node-cur">
+        <div class="edu-dot edu-dot-cur"></div>
+        <div class="edu-card edu-card-cur">
+          <div class="edu-year">2023 – 2027</div>
+          <div class="edu-badge edu-badge-cur">Current ✦</div>
+          <h3 class="edu-degree">B.E. — Artificial Intelligence &amp; Machine Learning</h3>
+          <div class="edu-inst">BNM Institute of Technology, Bengaluru</div>
+          <div class="edu-grade">CGPA: <strong>8.97 / 10</strong></div>
+          <div class="edu-subjects">
+            <span>AI / ML</span><span>Deep Learning</span><span>NLP</span><span>DSA</span><span>Data Analytics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section-subtle">
+  <div class="sec-wrap">
+
+    <div class="sec-head-center fade-in">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's <span>Connect</span></h2>
+      <p class="sec-sub">Want to talk about AI, startups, or just interesting problems? I'm around.</p>
+    </div>
+
+    <div class="contact-grid fade-in">
+
+      <div class="cc" id="email-cc" style="cursor:pointer" title="Click to copy email">
+        <div class="cc-icon">✉</div>
+        <div class="cc-body">
+          <div class="cc-lbl">Email</div>
+          <div class="cc-val">rishi.s1575@gmail.com</div>
+        </div>
+        <span class="cc-arr" id="copy-arr">↗</span>
+      </div>
+
+      <a href="https://github.com/RISHI-1575" target="_blank" rel="noopener" class="cc">
+        <div class="cc-icon" style="font-size:.72rem;font-weight:900;letter-spacing:-.01em">GH</div>
+        <div class="cc-body">
+          <div class="cc-lbl">GitHub</div>
+          <div class="cc-val">github.com/RISHI-1575</div>
+        </div>
+        <span class="cc-arr">↗</span>
+      </a>
+
+      <a href="https://linkedin.com/in/rishi-shashikanth" target="_blank" rel="noopener" class="cc">
+        <div class="cc-icon">in</div>
+        <div class="cc-body">
+          <div class="cc-lbl">LinkedIn</div>
+          <div class="cc-val">linkedin.com/in/rishi-shashikanth</div>
+        </div>
+        <span class="cc-arr">↗</span>
+      </a>
+
+      <div class="cc" style="cursor:default">
+        <div class="cc-icon">◉</div>
+        <div class="cc-body">
+          <div class="cc-lbl">Location</div>
+          <div class="cc-val">Bengaluru, India</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="avail-strip fade-in">
+      <div class="avail-left">
+        <span class="avail-dot"></span>
+        <strong>Open to Opportunities</strong>
+      </div>
+      <div class="avail-types">
+        <span>Internships</span><span>Full-time</span><span>Freelance</span><span>Collaboration</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 Rishi Shashikanth. Crafted with care.</span>
+    <div class="footer-links">
+      <a href="https://github.com/RISHI-1575"         target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/rishi-shashikanth" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:rishi.s1575@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
