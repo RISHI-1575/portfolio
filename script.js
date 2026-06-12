@@ -9,9 +9,14 @@ const themeIcon   = themeToggle ? themeToggle.querySelector('.theme-icon') : nul
 
 function applyTheme(dark) {
   document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
-  if (themeIcon) themeIcon.textContent = dark ? '☽' : '☀';
+  const icon = document.querySelector('#theme-toggle .theme-icon');
+  if (icon) icon.textContent = dark ? '☽' : '☀';
   try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch(e) {}
 }
+
+window._toggleTheme = function() {
+  applyTheme(document.body.getAttribute('data-theme') !== 'dark');
+};
 
 (function initTheme() {
   let saved;
@@ -21,9 +26,7 @@ function applyTheme(dark) {
 })();
 
 if (themeToggle) {
-  themeToggle.addEventListener('click', () => {
-    applyTheme(document.body.getAttribute('data-theme') !== 'dark');
-  });
+  themeToggle.addEventListener('click', window._toggleTheme);
 }
 
 /* ---------- Navbar scroll ---------- */
