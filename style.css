@@ -10,6 +10,20 @@ img  { max-width: 100%; display: block; }
 a    { text-decoration: none; color: inherit; }
 ul   { list-style: none; }
 
+/* ---------- Semantic highlight (mark) ---------- */
+mark {
+  background: var(--ind-l);
+  color: var(--ind);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-style: normal;
+}
+abbr {
+  text-decoration: underline dotted var(--txt-3);
+  cursor: help;
+}
+
 /* ---------- Design Tokens ---------- */
 :root {
   /* Backgrounds — Light mode (primary) */
