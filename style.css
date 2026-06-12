@@ -825,10 +825,19 @@ h2 span { color: var(--ind); }
 .proj-num {
   font-size: 1.55rem;
   font-weight: 900;
-  color: var(--ind-m);
+  color: var(--ind);
+  opacity: .3;
   letter-spacing: -.04em;
   line-height: 1;
 }
+
+/* Featured first project */
+.proj-card-featured {
+  grid-column: span 2;
+  border-color: var(--ind-m);
+  background: var(--bg-card);
+}
+.proj-card-featured .proj-title { font-size: 1rem; }
 .proj-badge {
   font-size: .58rem;
   font-weight: 700;
@@ -1145,6 +1154,7 @@ footer {
   .profile-card   { width: 280px; animation: none; }
   .about-grid     { grid-template-columns: 1fr; gap: 36px; }
   .proj-grid      { grid-template-columns: 1fr 1fr; }
+  .proj-card-featured { grid-column: span 2; }
   .nav-links, .nav-end { display: none; }
   .hamburger      { display: flex; }
   .edu-timeline   { flex-direction: column; align-items: stretch; }
@@ -1158,6 +1168,7 @@ footer {
   .nav-inner      { padding: 16px 20px; }
   .hero-inner     { padding: 24px 20px 64px; }
   .proj-grid      { grid-template-columns: 1fr; }
+  .proj-card-featured { grid-column: span 1; }
   .contact-grid   { grid-template-columns: 1fr; }
   .info-grid      { grid-template-columns: 1fr; }
   .exp-left       { display: none; }
