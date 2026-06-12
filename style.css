@@ -179,19 +179,24 @@ body {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 12px;
   font-size: .68rem;
   font-weight: 700;
-  letter-spacing: .2em;
+  letter-spacing: .24em;
   text-transform: uppercase;
   color: var(--ind);
-  background: var(--ind-l);
-  border: 1px solid var(--ind-m);
-  padding: 5px 14px;
-  border-radius: var(--r-pill);
   margin-bottom: 14px;
 }
-.eyebrow::before { content: '●'; font-size: .42rem; }
+.eyebrow::before,
+.eyebrow::after {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--ind);
+  flex-shrink: 0;
+  opacity: .7;
+}
 
 /* ---------- Shared: section h2 ---------- */
 h2 {
