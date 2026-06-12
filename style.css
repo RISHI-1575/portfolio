@@ -883,6 +883,17 @@ h2 span { color: var(--ind); }
   padding: 2px 8px;
   border-radius: var(--r-pill);
 }
+.proj-links { display: flex; gap: 10px; margin-bottom: 12px; }
+.proj-link {
+  font-size: .65rem;
+  font-weight: 600;
+  color: var(--ind);
+  border: 1px solid var(--ind-m);
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+  transition: background .18s, color .18s;
+}
+.proj-link:hover { background: var(--ind-l); }
 /* Bottom accent bar */
 .proj-bar {
   height: 2px;

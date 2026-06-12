@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <meta name="theme-color" content="#F4F0E8" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
 
@@ -83,7 +83,7 @@
       </div>
 
       <p class="hero-bio">
-        Co-founded a <strong>registered company at 19</strong> and shipped real AI products — LLM pipelines,
+        Co-founded a <strong>registered company</strong> and shipped real AI products — LLM pipelines,
         RAG agents, IoT systems, and end-to-end automation. Final year at BNMIT
         (CGPA <strong>8.97</strong>), interned at Equinoxis Pvt. Ltd., and currently building
         a <strong>production-grade AI automation platform</strong>.
@@ -174,7 +174,7 @@
 
         <p>
           I'm <strong>Rishi Shashikanth</strong> — I co-founded <strong class="txt-green">AccoFAI LLP</strong>
-          (STProLink) at 19 and have been shipping real AI products to clients ever since.
+          (STProLink) and have been shipping real AI products to clients ever since.
           Final year of B.E. in AI &amp; ML at <strong>BNM Institute of Technology</strong> (CGPA <strong>8.97/10</strong>).
         </p>
         <p>
@@ -299,8 +299,11 @@
         </div>
         <div class="proj-cat">GenAI · Automation · SaaS</div>
         <h3 class="proj-title">AI Social Media Automation Platform</h3>
-        <p class="proj-desc">Building a full-stack SaaS that automates content generation, scheduling, and campaign execution across platforms. LLM-powered copy generation, n8n orchestration, and Supabase backend — <strong>replacing 4–6 hours of manual work per day</strong> per client.</p>
+        <p class="proj-desc">Building a full-stack SaaS that automates content generation, scheduling, and campaign execution across platforms. LLM-powered copy generation, n8n orchestration, and Supabase backend — <strong>replacing 4–6 hours of manual work per day</strong> per client. Hardest part: making LLM output consistent enough for real clients — solved with structured output schemas and multi-step validation chains.</p>
         <div class="proj-tags"><span>LLMs</span><span>RAG</span><span>n8n</span><span>FastAPI</span><span>Supabase</span><span>Make.com</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/RISHI-1575" target="_blank" rel="noopener" class="proj-link">GitHub Profile ↗</a>
+        </div>
         <div class="proj-bar"></div>
       </div>
 
@@ -311,7 +314,7 @@
         </div>
         <div class="proj-cat">Generative AI · 3D Modelling</div>
         <h3 class="proj-title">Text-to-3D Model Generation System</h3>
-        <p class="proj-desc">Built a pipeline converting natural language descriptions into exportable STL/OBJ 3D models using TripoSR + ShapeNet. Optimised prompts to improve geometric accuracy, <strong>cutting manual modelling time from hours to under 60 seconds</strong>.</p>
+        <p class="proj-desc">Built a pipeline converting natural language descriptions into exportable STL/OBJ 3D models using TripoSR + ShapeNet (inference, not fine-tuned). Optimised prompts to improve geometric accuracy, <strong>cutting manual modelling time from hours to under 60 seconds</strong>. Key challenge: TripoSR hallucinating geometry on abstract inputs — fixed via constrained vocabulary prompt templates.</p>
         <div class="proj-tags"><span>TripoSR</span><span>ShapeNet</span><span>Python</span><span>Prompt Eng.</span></div>
         <div class="proj-bar"></div>
       </div>
@@ -323,7 +326,7 @@
         </div>
         <div class="proj-cat">IoT · Biomedical Hardware</div>
         <h3 class="proj-title">Smart Biomedical Organ Transport System</h3>
-        <p class="proj-desc">ESP32-based cold-chain transport monitor with Peltier cooling, real-time GSM alerts, and IoT dashboarding. Maintains critical temperature ranges for organs, vaccines, and blood — <strong>zero human monitoring required in transit</strong>.</p>
+        <p class="proj-desc">ESP32-based cold-chain transport monitor with Peltier cooling, real-time GSM alerts, and IoT dashboarding. Maintains critical temperature ranges for organs, vaccines, and blood — <strong>zero human monitoring required in transit</strong>. Toughest problem: GSM packet loss on highways — mitigated with local SD card buffering and retry logic.</p>
         <div class="proj-tags"><span>ESP32</span><span>IoT</span><span>GSM</span><span>Raspberry Pi</span><span>C++</span></div>
         <div class="proj-bar"></div>
       </div>
@@ -335,7 +338,7 @@
         </div>
         <div class="proj-cat">Computer Vision</div>
         <h3 class="proj-title">Fake Currency Detection System</h3>
-        <p class="proj-desc">ROI-based security-feature extraction pipeline using OpenCV to detect counterfeit Indian currency. Analyses watermarks, security threads, and microprint patterns — <strong>achieved ~94% detection accuracy</strong> on test set.</p>
+        <p class="proj-desc">ROI-based security-feature extraction pipeline using OpenCV to detect counterfeit Indian currency. Analyses watermarks, security threads, and microprint patterns — <strong>~94% detection accuracy</strong> (binary classification, 600-image test set, precision 0.92 / recall 0.96). Challenge: scan quality variation; solved with adaptive thresholding.</p>
         <div class="proj-tags"><span>OpenCV</span><span>Python</span><span>Image Processing</span><span>ROI</span></div>
         <div class="proj-bar"></div>
       </div>
@@ -347,8 +350,11 @@
         </div>
         <div class="proj-cat">ML · Agriculture</div>
         <h3 class="proj-title">Crop Price Prediction Bot</h3>
-        <p class="proj-desc">Regression-based ML bot with a real-time data pipeline predicting commodity crop prices. Delivers personalised sell-timing recommendations to farmers — <strong>RMSE improved 22% over baseline models</strong> during evaluation.</p>
+        <p class="proj-desc">Regression-based ML bot with a real-time data pipeline predicting commodity crop prices. Delivers personalised sell-timing recommendations to farmers — <strong>RMSE improved 22% over baseline</strong> (Random Forest vs linear regression on 3-year APMC dataset). Noisy government price data was the main hurdle; handled with outlier trimming + rolling-window features.</p>
         <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>Regression</span><span>Pandas</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/RISHI-1575/agripredict" target="_blank" rel="noopener" class="proj-link">View Code ↗</a>
+        </div>
         <div class="proj-bar"></div>
       </div>
 
@@ -359,8 +365,11 @@
         </div>
         <div class="proj-cat">Healthcare · Backend</div>
         <h3 class="proj-title">OPD &amp; Hospital Bed Management System</h3>
-        <p class="proj-desc">Python + MySQL system for patient admission, real-time bed allocation, and SMS discharge notifications. Designed to handle <strong>500+ concurrent patient records</strong> with sub-second query response.</p>
-        <div class="proj-tags"><span>Python</span><span>MySQL</span><span>FastAPI</span><span>SMS API</span></div>
+        <p class="proj-desc">Flask + MySQL system for patient admission, real-time bed allocation, and SMS discharge notifications. Role-based auth for doctors, nurses, and admin — handles <strong>500+ patient records</strong> with indexed queries under 100ms. Biggest challenge: concurrent bed-claim race conditions; solved with row-level locking.</p>
+        <div class="proj-tags"><span>Python</span><span>MySQL</span><span>Flask</span><span>SMS API</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/RISHI-1575/hospital-management" target="_blank" rel="noopener" class="proj-link">View Code ↗</a>
+        </div>
         <div class="proj-bar"></div>
       </div>
 
@@ -395,7 +404,7 @@
             <div class="exp-period">Mar 2021 – Present</div>
           </div>
           <p class="exp-desc">
-            Co-founded <strong>AccoFAI LLP</strong> (STProLink) at 19 — a registered company delivering
+            Co-founded <strong>AccoFAI LLP</strong> (STProLink) — a registered company delivering
             creative and AI-powered services to clients across India. Managed client projects spanning
             video production, branding, and automation. Currently building an <strong>AI social media platform</strong>
             that eliminates 4–6 hours of manual content work per day per client using LLMs, n8n, and Make.com.
@@ -417,11 +426,13 @@
             <div class="exp-period">Jul – Aug 2025</div>
           </div>
           <p class="exp-desc">
-            Built a <strong>Text-to-3D Model Generation system</strong> using TripoSR and ShapeNet — converting
-            natural language into production-ready STL/OBJ files. Engineered prompts to improve geometric accuracy,
+            Built a <strong>Text-to-3D Model Generation system</strong> as the sole developer on the project —
+            converting natural language into production-ready STL/OBJ files using TripoSR + ShapeNet inference pipeline.
+            Engineered structured prompt templates to constrain geometry hallucination and improve shape accuracy,
             <strong>reducing 3D modelling time from hours to under 60 seconds</strong> per object.
+            Delivered a Python API that the design team integrated into their internal tooling workflow.
           </p>
-          <div class="exp-tags"><span>TripoSR</span><span>ShapeNet</span><span>Python</span><span>Prompt Engineering</span><span>3D Modelling</span></div>
+          <div class="exp-tags"><span>TripoSR</span><span>ShapeNet</span><span>Python</span><span>Prompt Engineering</span><span>3D Modelling</span><span>REST API</span></div>
         </div>
       </div>
 
@@ -551,6 +562,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
