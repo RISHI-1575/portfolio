@@ -3,6 +3,29 @@
    script.js
    ============================================================ */
 
+/* ---------- Theme toggle ---------- */
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon   = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
+
+function applyTheme(dark) {
+  document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
+  if (themeIcon) themeIcon.textContent = dark ? '☽' : '☀';
+  try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch(e) {}
+}
+
+(function initTheme() {
+  let saved;
+  try { saved = localStorage.getItem('theme'); } catch(e) {}
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved ? saved === 'dark' : prefersDark);
+})();
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    applyTheme(document.body.getAttribute('data-theme') !== 'dark');
+  });
+}
+
 /* ---------- Navbar scroll ---------- */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
