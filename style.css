@@ -1,6 +1,6 @@
 /* ============================================================
    RISHI SHASHIKANTH — PORTFOLIO 2
-   Clean · Professional · Light Mode
+   Premium Dark · Gold Accent
    style.css
    ============================================================ */
 
@@ -12,54 +12,64 @@ ul   { list-style: none; }
 
 /* ---------- Design Tokens ---------- */
 :root {
-  /* Surface */
-  --bg:         #F9FAFB;   /* page bg — barely-off-white */
-  --surface:    #FFFFFF;   /* cards, navbar */
-  --surface-2:  #F3F4F6;   /* inner card bg */
-  --border:     #E5E7EB;
-  --border-2:   #D1D5DB;
+  /* Backgrounds */
+  --bg:         #0D1117;
+  --surface:    #131920;
+  --surface-2:  #1F2636;
+  --bg-card:    #1C2230;
 
-  /* Type */
-  --txt:        #111827;
-  --txt-2:      #4B5563;   /* bumped from #6B7280 → WCAG AA 6.5:1 on bg */
-  --txt-3:      #9CA3AF;
+  /* Borders */
+  --border:     rgba(255,255,255,0.08);
+  --border-2:   rgba(255,255,255,0.14);
 
-  /* Indigo — primary */
-  --ind:        #4F46E5;
-  --ind-d:      #4338CA;
-  --ind-l:      #EEF2FF;
-  --ind-m:      #C7D2FE;
+  /* Text */
+  --txt:        #F1F5F9;
+  --txt-2:      #94A3B8;
+  --txt-3:      #4E5A6E;
 
-  /* Emerald — available / positive */
-  --em:         #059669;
-  --em-l:       #ECFDF5;
-  --em-m:       #A7F3D0;
+  /* Gold — primary accent */
+  --ind:        #C8A45A;
+  --ind-d:      #D9BA77;
+  --ind-l:      rgba(200,164,90,0.12);
+  --ind-m:      rgba(200,164,90,0.28);
 
-  /* Violet — secondary accent */
-  --vio:        #7C3AED;
-  --vio-l:      #F5F3FF;
-  --vio-m:      #DDD6FE;
+  /* Gold named aliases */
+  --gold:       #C8A45A;
+  --gold-h:     #D9BA77;
+  --gold-t:     #ECC97A;
+  --gold-s:     rgba(200,164,90,0.12);
 
-  /* Amber */
-  --amb:        #D97706;
-  --amb-l:      #FFFBEB;
-  --amb-m:      #FDE68A;
+  /* Emerald — status/available */
+  --em:         #2CC87A;
+  --em-l:       rgba(44,200,122,0.12);
+  --em-m:       rgba(44,200,122,0.28);
+
+  /* Slate Blue — secondary, links only */
+  --vio:        #5B6EFF;
+  --vio-l:      rgba(91,110,255,0.12);
+  --vio-m:      rgba(91,110,255,0.25);
+
+  /* Amber / warning */
+  --amb:        #D4900E;
+  --amb-l:      rgba(212,144,14,0.12);
+  --amb-m:      rgba(212,144,14,0.28);
 
   /* Shadows */
-  --sh-xs:  0 1px 2px rgba(0,0,0,.05);
-  --sh-sm:  0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-  --sh-md:  0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
-  --sh-lg:  0 8px 32px rgba(0,0,0,.10), 0 4px 8px rgba(0,0,0,.05);
-  --sh-xl:  0 20px 60px rgba(0,0,0,.12), 0 8px 20px rgba(0,0,0,.06);
+  --sh-xs:  0 1px 3px rgba(0,0,0,.50);
+  --sh-sm:  0 2px 8px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.30);
+  --sh-md:  0 4px 16px rgba(0,0,0,.55), 0 2px 4px rgba(0,0,0,.25);
+  --sh-lg:  0 8px 32px rgba(0,0,0,.60), 0 4px 8px rgba(0,0,0,.25);
+  --sh-xl:  0 20px 60px rgba(0,0,0,.65), 0 8px 20px rgba(0,0,0,.35);
+  --sh-gold:0 0 0 1px rgba(200,164,90,.28), 0 4px 24px rgba(200,164,90,.14);
 
   /* Radii */
-  --r-xs:  4px;
-  --r-sm:  8px;
-  --r-md:  12px;
-  --r-lg:  16px;
-  --r-xl:  24px;
-  --r-2xl: 32px;
-  --r-pill:50px;
+  --r-xs:   3px;
+  --r-sm:   6px;
+  --r-md:   10px;
+  --r-lg:   14px;
+  --r-xl:   20px;
+  --r-2xl:  28px;
+  --r-pill: 999px;
 
   /* Font */
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -107,8 +117,8 @@ body {
   margin: 0 auto;
   padding: 96px 40px;
 }
-.section-light  { background: var(--surface); }
-.section-subtle { background: var(--bg); }
+.section-light  { background: #131920; }
+.section-subtle { background: #0D1117; }
 
 /* ---------- Shared: eyebrow ---------- */
 .eyebrow {
@@ -159,9 +169,9 @@ h2 span { color: var(--ind); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--ind);
-  color: #fff;
-  border: 1.5px solid var(--ind);
+  background: var(--gold);
+  color: #0D1117;
+  border: 1.5px solid var(--gold);
   padding: 11px 26px;
   border-radius: var(--r-sm);
   font: 600 .875rem var(--font);
@@ -169,9 +179,9 @@ h2 span { color: var(--ind); }
   transition: background .2s, box-shadow .2s, transform .15s;
 }
 .btn-primary:hover {
-  background: var(--ind-d);
-  border-color: var(--ind-d);
-  box-shadow: 0 4px 16px rgba(79,70,229,.32);
+  background: var(--gold-h);
+  border-color: var(--gold-h);
+  box-shadow: 0 4px 20px rgba(200,164,90,.35);
   transform: translateY(-1px);
 }
 .btn-arr { transition: transform .2s; }
@@ -224,9 +234,9 @@ h2 span { color: var(--ind); }
   transition: background .3s, box-shadow .3s;
 }
 #navbar.scrolled {
-  background: rgba(255,255,255,.94);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(13,17,23,.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   box-shadow: 0 1px 0 var(--border);
 }
 .nav-inner {
@@ -250,8 +260,8 @@ h2 span { color: var(--ind); }
 .nav-logo-box {
   width: 32px; height: 32px;
   border-radius: var(--r-sm);
-  background: var(--ind);
-  color: #fff;
+  background: var(--gold);
+  color: #0D1117;
   font-size: .82rem;
   font-weight: 800;
   display: flex; align-items: center; justify-content: center;
@@ -295,7 +305,7 @@ h2 span { color: var(--ind); }
 .mobile-menu {
   display: none;
   position: fixed; top: 70px; left: 0; right: 0;
-  background: rgba(255,255,255,.96);
+  background: rgba(19,25,32,.97);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
   padding: 12px 40px 20px;
@@ -337,12 +347,12 @@ h2 span { color: var(--ind); }
 }
 .hero-blob-1 {
   width: 640px; height: 640px;
-  background: radial-gradient(circle, rgba(79,70,229,.07) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(200,164,90,.10) 0%, transparent 65%);
   top: -160px; right: -160px;
 }
 .hero-blob-2 {
   width: 480px; height: 480px;
-  background: radial-gradient(circle, rgba(16,185,129,.06) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(91,110,255,.07) 0%, transparent 65%);
   bottom: -80px; left: -80px;
 }
 
@@ -395,8 +405,8 @@ h2 span { color: var(--ind); }
   display: block;
   font-size: clamp(3rem, 7.5vw, 5.2rem);
   font-weight: 900;
-  color: var(--ind); /* fallback for forced-colors / print */
-  background: linear-gradient(135deg, var(--ind) 0%, var(--vio) 100%);
+  color: var(--gold-t); /* fallback for forced-colors / print */
+  background: linear-gradient(135deg, #C8A45A 0%, #ECC97A 50%, #C8A45A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -485,7 +495,7 @@ h2 span { color: var(--ind); }
 .pc-blob {
   position: absolute;
   width: 220px; height: 220px;
-  background: radial-gradient(circle, rgba(79,70,229,.05) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(200,164,90,.06) 0%, transparent 65%);
   bottom: -80px; right: -80px;
   pointer-events: none;
 }
@@ -497,14 +507,14 @@ h2 span { color: var(--ind); }
 .pc-avatar {
   width: 52px; height: 52px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--ind), var(--vio));
-  color: #fff;
+  background: linear-gradient(135deg, #C8A45A, #ECC97A);
+  color: #0D1117;
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: -.01em;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(79,70,229,.28);
+  box-shadow: 0 4px 14px rgba(200,164,90,.35);
 }
 .pc-avail {
   display: inline-flex; align-items: center; gap: 6px;
