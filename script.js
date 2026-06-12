@@ -70,10 +70,10 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 /* ---------- Typewriter ---------- */
 const roles = [
   'AI/ML Engineer',
-  'Full-Stack Developer',
-  'Automation Builder',
-  'GenAI Enthusiast',
-  'Director @ AccoFAI LLP',
+  'LLM Systems Builder',
+  'Automation Architect',
+  'Generative AI Developer',
+  'Tech Founder',
 ];
 let rIdx = 0, cIdx = 0, isDeleting = false;
 const tw = document.getElementById('typewriter');
@@ -133,6 +133,23 @@ if (emailCC) {
       }, 2000);
     });
   });
+}
+
+/* ---------- 3D tilt on cards and photo ---------- */
+if (!prefersReducedMotion) {
+  function attachTilt(selector, maxDeg) {
+    document.querySelectorAll(selector).forEach(el => {
+      el.addEventListener('mousemove', e => {
+        const r = el.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width  - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        el.style.transform = `perspective(800px) rotateY(${x * maxDeg * 2}deg) rotateX(${-y * maxDeg}deg) translateY(-4px)`;
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+  }
+  attachTilt('.proj-card', 6);
+  attachTilt('.hero-photo-wrap', 8);
 }
 
 /* ---------- Smooth scroll for anchor links ---------- */
