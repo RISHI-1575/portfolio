@@ -1108,6 +1108,11 @@ h2 span { color: var(--ind); }
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
 }
+.contact-grid-wrap { max-width: 900px; margin: 0 auto 16px; display: flex; flex-direction: column; gap: 12px; }
+.contact-row { display: grid; gap: 12px; }
+.contact-row-top { grid-template-columns: repeat(3, 1fr); }
+.contact-row-bot { grid-template-columns: repeat(2, 1fr); }
+.cc-icon-gh { display: flex; align-items: center; justify-content: center; }
 .cc {
   display: flex;
   align-items: center;
@@ -1242,6 +1247,8 @@ footer {
   .contact-grid,
   .contact-grid-3,
   .contact-grid-4    { grid-template-columns: 1fr; }
+  .contact-row-top,
+  .contact-row-bot   { grid-template-columns: 1fr; }
   .info-grid         { grid-template-columns: 1fr; }
   .exp-left          { display: none; }
   .exp-right         { padding-left: 0; }
